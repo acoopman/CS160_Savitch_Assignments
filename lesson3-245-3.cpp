@@ -16,13 +16,8 @@
 using namespace std;
 
 //------------------------------------------------------------------------
-double stock_price(int dollars, int num, int den)
-{
-  double price;
-  price = dollars + (num/static_cast<double>(den));
-  
-  return price;
-}
+double stock_price(int dollars, int num, int den);
+
 //------------------------------------------------------------------------
 int main( )
 {
@@ -59,4 +54,12 @@ int main( )
     }
   return 0;
   
+}
+//------------------------------------------------------------------------
+double stock_price(int dollars, int num, int den)
+{
+  double price;
+  price = dollars + (num/static_cast<double>(den));
+  
+  return price;
 }
